@@ -45,5 +45,5 @@ add_row = {
 }
 
 response2 = requests.post(url=sheety_url, json=add_row, auth=(os.environ["username"].strip().strip('"').strip("'"),
-                                                          os.environ["password"].strip().strip('"').strip("'"),))
+                                                              os.environ["password"].strip().strip('"').strip("'"),))
 print(response2.text)
